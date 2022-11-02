@@ -1,0 +1,8 @@
+spring:        
+  cloud:
+    gateway:
+      routes:
+      - id: STUDENT-MICROSERVICE
+        uri: lb://STUDENT-MICROSERVICE
+        predicates:
+        - path = "/Student/**"
