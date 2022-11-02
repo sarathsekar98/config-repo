@@ -6,4 +6,4 @@ spring:
       - id: customer-microservice
         uri: lb://customer-microservice
         predicates:
-        - Path=/customer/**
+        - Path=/student/**
