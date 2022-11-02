@@ -1,9 +1,0 @@
-
-spring:
-  cloud:
-    gateway:
-      routes:
-      - id: customer-microservice
-        uri: lb://customer-microservice
-        predicates:
-        - Path=/customer/**
